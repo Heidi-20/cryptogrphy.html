@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsome -->
+    <title>cryptogrphy</title>
+</head>
+
+<body>
+    <header>
+        <p class="logo">cryptogrphy</p>
+        <!-- list of anchor -->
+        <ul>
+            <li><a href="#home">home</a> </li>
+            <li><a href="#classification">classification</a></li>
+            <li><a href="#Modern cryptography">Modern cryptography</a></li>
+            <li><a href="#Public-key">Public-key</a></li>
+            <li><a href="#Cryptanalysis">Cryptanalysis</a></li>
+        </ul>
+    </header>
+    <main>
+        <div id="home">
+            <p>Before the modern era, cryptography focused on message confidentiality (i.e., encryption)—conversion of
+                messages from a comprehensible form into an incomprehensible one and back again at the other end,
+                rendering it unreadable by interceptors or eavesdroppers without secret knowledge (namely the key needed
+                for decryption of that message). Encryption attempted to ensure secrecy in communications, such as those
+                of spies, military leaders, and diplomats. In recent decades, the field has expanded beyond
+                confidentiality concerns to include techniques for message integrity checking, sender/receiver identity
+                authentication, digital signatures, interactive proofs and secure computation, among others <br>
+                Cryptography prior to the modern age was effectively synonymous with encryption, converting information
+                from a readable state to unintelligible nonsense. The sender of an encrypted message shares the decoding
+                technique only with intended recipients to preclude access from adversaries. The cryptography literature
+                often uses the names Alice ("A") for the sender, Bob ("B") for the intended recipient, and Eve
+                ("eavesdropper") for the adversary.[5] Since the development of rotor cipher machines in World War I and
+                the advent of computers in World War II, cryptography methods have become increasingly complex and its
+                applications more varied.
+
+                Modern cryptography is heavily based on mathematical theory and computer science practice; cryptographic
+                algorithms are designed around computational hardness assumptions, making such algorithms hard to break
+                in actual practice by any adversary. While it is theoretically possible to break into a well-designed
+                system, it is infeasible in actual practice to do so. Such schemes, if well designed, are therefore
+                termed "computationally secure"; theoretical advances, e.g., improvements in integer factorization
+                algorithms, and faster computing technology require these designs to be continually reevaluated, and if
+                necessary, adapted.<br>
+                There exist information-theoretically secure schemes that provably cannot be broken even with unlimited
+                computing power, such as the one-time pad, but these schemes are much more difficult to use in practice
+                than the best theoretically breakable but computationally secure schemes
+            </p>
+        </div>
+        <!-- table for cryptogrphy   -->
+        <div id="classification">
+            <table>
+                <caption>classification of cryptography</caption>
+                <tr>
+                    <th scope="col">cryptography </th>
+
+                </tr>
+                <tr>
+                    <td>symmetric key </td>
+                </tr>
+                <tr>
+                    <td>Asymmetric key</td>
+                </tr>
+                <tr>
+                    <td>Hash function</td>
+                </tr>
+            </table>
+        </div>
+        <div id="Modern cryptography">
+            <p>
+                Symmetric-key cryptography refers to encryption methods in which both the sender and receiver share the
+                same key (or, less commonly, in which their keys are different, but related in an easily computable
+                way).
+                This was the only kind of encryption publicly known until June 1976.
+                Symmetric key ciphers are implemented as either block ciphers or stream ciphers. A block cipher
+                enciphers input in blocks of plaintext as opposed to individual characters, the input form used by a
+                stream cipher.<br>
+                The Data Encryption Standard (DES) and the Advanced Encryption Standard (AES) are block cipher designs
+                that have been designated cryptography standards by the US government (though DES's designation was
+                finally withdrawn after the AES was adopted).[34] Despite its deprecation as an official standard, DES
+                (especially its still-approved and much more secure triple-DES variant) remains quite popular; it is
+                used across a wide range of applications<br>
+                The Data Encryption Standard (DES) and the Advanced Encryption Standard (AES) are block cipher designs
+                that have been designated cryptography standards by the US government (though DES's designation was
+                finally withdrawn after the AES was adopted).[34] Despite its deprecation as an official standard, DES
+                (especially its still-approved and much more secure triple-DES variant) remains quite popular; it is
+                used across a wide range of applications, from ATM encryption[35] to e-mail privacy[36] and secure
+                remote access.[37] Many other block ciphers have been designed and released, with considerable variation
+                in quality. Many, even some designed by capable practitioners, have been thoroughly broken, such as FEAL
+            </p>
+        </div>
+        <div id="Public-key">
+            <p>
+                Symmetric-key cryptosystems use the same key for encryption and decryption of a message, <br>
+                although a message or group of messages can have a different key than others. A significant disadvantage
+                of symmetric ciphers is the key management necessary to use them securely. Each distinct pair of
+                communicating parties must, ideally, share a different key, and perhaps for each ciphertext exchanged as
+                well. The number of keys required increases as the square of the number of network members,<br>
+                which very quickly requires complex key management schemes to keep them all consistent and secret.
+                In a groundbreaking 1976 paper, Whitfield Diffie and Martin Hellman proposed the notion of public-key
+                (also, more generally,<br>
+                called asymmetric key) cryptography in which two different but mathematically related keys are used—a
+                public key and a private key
+            </p>
+            <!-- img of NSA involvement -->
+            <img src="https://cdn.ttgtmedia.com/rms/onlineImages/security_cissp_cryptography_mobile.jpg">
+        </div>
+        <div id="Cryptanalysis">
+            <img src="https://101blockchains.com/wp-content/uploads/2021/04/blockchain-cryptography-explained-e1620152842325.png"
+            alt="">
+            <p>
+                The goal of cryptanalysis is to find some weakness or insecurity in a cryptographic scheme, thus
+                permitting its subversion or evasion.<br>
+                It is a common misconception that every encryption method can be broken. In connection with his WWII
+                work at Bell Labs, Claude Shannon proved that the one-time pad cipher is unbreakable, provided the key
+                material is truly random, never reused, kept secret from all possible attackers, and of equal or greater
+                length than the message.<br>
+                Most ciphers, apart from the one-time pad, can be broken with enough computational effort by brute force
+                attack, but the amount of effort needed may be exponentially dependent on the key size, as compared to
+                the effort needed to make use of the cipher. In such cases, effective security could be achieved if it
+                is proven that the effort required (i.e., "work factor", in Shannon's terms) is beyond the ability of
+                any adversary. This means it must be shown that no efficient method (as opposed to the time-consuming
+                brute force method) can be found to break the cipher. Since no such proof has been found to date, the
+                one-time-pad remains the only theoretically unbreakable cipher. Although well-implemented one-time-pad
+                encryption cannot be broken, traffic analysis is still possible.<br>
+                Cryptanalysis of symmetric-key ciphers typically involves looking for attacks against the block ciphers
+                or stream ciphers that are more efficient than any attack that could be against a perfect cipher. For
+                example, a simple brute force attack against DES requires one known plaintext and 255 decryptions,
+                trying approximately half of the possible keys, to reach a point at which chances are better than even
+                that the key sought will have been found. But this may not be enough assurance; a linear cryptanalysis
+                attack against DES requires 243 known plaintexts (with their corresponding ciphertexts) and
+                approximately 243 DES operations.[52] This is a considerable improvement over brute force attacks.<br>
+                Public-key algorithms are based on the computational difficulty of various problems. The most famous of
+                these are the difficulty of integer factorization of semiprimes and the difficulty of calculating
+                discrete logarithms, both of which are not yet proven to be solvable in polynomial time using only a
+                classical Turing-complete computer. Much public-key cryptanalysis concerns designing algorithms in P
+                that can solve these problems, or using other technologies, such as quantum computers. For instance, the
+                best-known algorithms for solving the elliptic curve-based version of discrete logarithm are much more
+                time-consuming than the best-known algorithms for factoring, at least for problems of more or less
+                equivalent size. Thus, other things being equal, to achieve an equivalent strength of attack resistance,
+                factoring-based encryption techniques must use larger keys than elliptic curve techniques. For this
+                reason, public-key cryptosystems based on elliptic curves have become popular since their invention in
+                the mid-1990s.
+
+                While pure cryptanalysis uses weaknesses in the algorithms themselves, other attacks on cryptosystems
+                are based on actual use of the algorithms in real devices, and are called side-channel attacks. If a
+                cryptanalyst has access to, for example, the amount of time the device took to encrypt a number of
+                plaintexts or report an error in a password or PIN character, he may be able to use a timing attack to
+                break a cipher that is otherwise resistant to analysis. An attacker might also study the pattern and
+                length of messages to derive valuable information; this is known as traffic analysis[53] and can be
+                quite useful to an alert adversary. Poor administration of a cryptosystem, such as permitting too short
+                keys, will make any system vulnerable, regardless of other virtues.
+                Social engineering and other attacks against humans (e.g., bribery, extortion, blackmail, espionage,
+                torture, ...) are usually employed due to being more cost-effective and feasible to perform in a
+                reasonable amount of time compared to pure cryptanalysis by a high margin.
+            </p>
+
+        </div>
+
+    </main>
+</body>
+
+</html>
